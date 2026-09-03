@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="estilos.css"/>
+</head>
+<body>
+
+    <div class="contenedor">
+        <h1>Sistema de Apartado de Libros</h1>
+        <div class="formulario">
+            <h2>Registrar libro</h2>
+                <input type="text" id="titulo" placeholder="Nombre del libro">
+                <input type="text" id="autor" placeholder="Autor del libro">
+                <input type="text" id="anio" placeholder="Anio de publicacion del libro">
+                <button onclick="registrarLibro()">registrar libro</button>
+        </div> 
+        <div class="formulario">
+            <h2> Datos del usuario</h2>
+            <input type="text" id="usuario" placeholder="Nombre del usuario">
+            <button onclick="mostrarApartados()">Ver apartados</button> 
+        </div>    
+
+        <h2>Libros disponibles</h2>
+        <div id="listaLibros" class="libros"></div> 
+        <h2>Mis apartados</h2>
+        <div id="listaApartados"></div> 
+    </div>
+
+ <script src="index.js"></script>
+
+</body>
+</html>
